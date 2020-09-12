@@ -53,7 +53,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
             android:src="@drawable/banner2" />
 
         <LinearLayout
@@ -98,7 +97,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
             android:src="@drawable/banner1" />
 
         <LinearLayout

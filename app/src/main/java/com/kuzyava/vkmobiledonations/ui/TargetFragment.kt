@@ -8,6 +8,7 @@ import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -41,7 +42,10 @@ class TargetFragment : Fragment() {
             val amount = binding.amount.text.toString()
             val goal = binding.goal.text.toString()
             val desc = binding.description.text.toString()
-            val img = imageUri
+            val img = if (imageUri == null) {
+                Toast.makeText(activity, "Добавьте изображение!", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else imageUri
             val model = DonationModel(title, amount, goal, desc, img = img)
             val bundle = bundleOf("model" to model)
             findNavController().navigate(R.id.nav_additional, bundle)

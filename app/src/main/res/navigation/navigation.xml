@@ -26,8 +26,13 @@
         tools:layout="@layout/fragment_finish" />
 
     <fragment
-        android:id="@+id/nav_type"
-        android:name="com.kuzyava.vkmobiledonations.ui.TypeFragment"
+    android:id="@+id/nav_type"
+    android:name="com.kuzyava.vkmobiledonations.ui.TypeFragment"
+    tools:layout="@layout/fragment_type" />
+
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.kuzyava.vkmobiledonations.ui.DetailFragment"
         tools:layout="@layout/fragment_type" />
 
 </navigation>

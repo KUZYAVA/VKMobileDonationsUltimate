@@ -8,7 +8,7 @@ import com.kuzyava.vkmobiledonations.R
 import com.kuzyava.vkmobiledonations.databinding.ItemDonationBinding
 import com.kuzyava.vkmobiledonations.model.DonationModel
 
-class DonationAdapter :
+class DonationAdapter(private val itemClickListener: ItemClickListener) :
     RecyclerView.Adapter<DonationAdapter.DonationsVH>() {
     private val items: MutableList<DonationModel> = mutableListOf()
 
@@ -36,10 +36,15 @@ class DonationAdapter :
             model = item
             executePendingBindings()
         }
+        holder.binding.root.setOnClickListener { itemClickListener.onItemClick(item) }
     }
 
     override fun getItemCount() = items.size
 
     class DonationsVH(val binding: ItemDonationBinding) :
         RecyclerView.ViewHolder(binding.root)
+
+    interface ItemClickListener {
+        fun onItemClick(item: DonationModel)
+    }
 }

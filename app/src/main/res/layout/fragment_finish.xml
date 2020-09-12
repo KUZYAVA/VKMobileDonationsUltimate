@@ -201,7 +201,8 @@
                                     android:layout_width="237dp"
                                     android:layout_height="4dp"
                                     android:layout_marginTop="8dp"
-                                    android:background="#3F8AE0" />
+                                    android:background="#483F8AE0"
+                                    />
                             </LinearLayout>
 
                             <TextView
