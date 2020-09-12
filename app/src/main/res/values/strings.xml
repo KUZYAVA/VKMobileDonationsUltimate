@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Сборы</string>
+    <string name="donations">Пожертвования</string>
+    <string name="noDonations">У Вас пока нет сборов.\n Начните доброе дело.</string>
+    <string name="create">Создать сбор</string>
+    <string name="type">Тип сбора</string>
+    <string name="first">Целевой сбор</string>
+</resources>

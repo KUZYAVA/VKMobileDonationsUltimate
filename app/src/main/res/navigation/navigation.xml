@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.kuzyava.vkmobiledonations.ui.WelcomeFragment"
+        tools:layout="@layout/fragment_welcome" />
+
+    <fragment
+        android:id="@+id/nav_target"
+        android:name="com.kuzyava.vkmobiledonations.ui.TargetFragment"
+        tools:layout="@layout/fragment_target" />
+
+    <fragment
+        android:id="@+id/nav_additional"
+        android:name="com.kuzyava.vkmobiledonations.ui.AdditionalFragment"
+        tools:layout="@layout/fragment_additional" />
+
+    <fragment
+        android:id="@+id/nav_finish"
+        android:name="com.kuzyava.vkmobiledonations.ui.FinishFragment"
+        tools:layout="@layout/fragment_finish" />
+
+    <fragment
+        android:id="@+id/nav_type"
+        android:name="com.kuzyava.vkmobiledonations.ui.TypeFragment"
+        tools:layout="@layout/fragment_type" />
+
+</navigation>
